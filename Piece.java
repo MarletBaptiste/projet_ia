@@ -4,15 +4,16 @@ public class Piece {
 	final String player;
 	int x;
 	int y;
-	
+	boolean paladin;
 	final boolean licorne;
 
 	EscampeBoard board;
 	
-	public Piece(String player, boolean licorne, EscampeBoard board) {
+	public Piece(String player, boolean licorne, boolean paladin, EscampeBoard board) {
 		this.player = player;
 		this.board = board;
 		this.licorne = licorne;
+		this.paladin = paladin;
 	}
 	
 	public int getY() {
@@ -30,6 +31,4 @@ public class Piece {
 	public void setX(int x) {
 		this.x = x;
 	}
-	
-	
 }
